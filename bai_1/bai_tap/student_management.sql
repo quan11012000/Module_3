@@ -10,7 +10,7 @@ create table classes(
 	id int not null ,
     class_name varchar(50) not null
 );
-create table teacher(
+create table teachers(
 	teacher_id int not null,
     teacher_name varchar(50) not null,
     teacher_age int not null,
