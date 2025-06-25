@@ -1,0 +1,14 @@
+@media screen and (min-width: 1024px) {
+    .header-menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+    }
+    .header-menu-button {
+        display: none;
+    }
+    .last-nav-item {
+        flex: 1;
+        text-align: right;
+    }
+}

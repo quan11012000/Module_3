@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="desktop.css">
+</head>
+<body>
+<div>
+    <header>
+        <div class="container header-wrapper">
+            <img src="https://intphcm.com/data/upload/logo-the-thao-dep.jpg" class="header-logo">
+            <ul class="header-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+                <li class="last-nav-item"><a href="">Log out</a></li>
+            </ul>
+            <button class="header-menu-button">=</button>
+        </div>
+    </header>
+    <main class="main">
+        <aside class="aside">
+            <div class="aside-wrapper">
+                <a href=""> link 1</a>
+                <a href=""> link 2</a>
+                <a href=""> link 3</a>
+            </div>
+        </aside>
+        <section class="section">
+            <div>
+                <p class="section-content">
+                <h2>Welcome</h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+                <hr style="width: 80%; margin-left: auto; margin-right: auto;">
+                <p class="section-content">
+                <h2>Test</h2>
+                Lorem ipsum
+                </p>
+            </div>
+        </section>
+        <aside class="aside">
+            <div>
+                <p class="aside_p">ADS</p>
+                <p class="aside_p">ADS</p>
+            </div>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div>
+            <p class="footer_p">Footer Text</p>
+        </div>
+    </footer>
+</div>
+<script>
+    document.querySelector('.header-menu-button').addEventListener('click', () => {
+        document.querySelector('.header-menu').classList.toggle('active');
+    });
+</script>
+</body>
+</html>
