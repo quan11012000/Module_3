@@ -1,0 +1,17 @@
+.mod-banner {
+    background: #D3E1F4;
+}
+.img-card{
+    padding: 25px;
+}
+.img-menu{
+    width: 30px;
+    height: auto;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}

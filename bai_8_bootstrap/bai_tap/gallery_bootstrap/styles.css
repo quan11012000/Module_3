@@ -1,0 +1,6 @@
+.img-wrapper {
+    position: relative;
+    height: 0;
+    display: block;
+    padding-bottom: 56.25%;
+}
