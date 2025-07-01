@@ -1,4 +1,4 @@
-package entity;
+package org.example.productmanagement.entity;
 
 public class Product {
     private int id;

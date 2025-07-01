@@ -6,8 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
-<%@ page import="model.Product" %>
-<jsp:useBean id="product" scope="request" type="model.Product" />
 <html>
 <head>
   <title>Chi tiết sản phẩm</title>
