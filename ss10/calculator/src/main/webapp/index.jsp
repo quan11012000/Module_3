@@ -15,7 +15,10 @@
         <table>
             <tr>
                 <td>First operand:</td>
-                <td><input type="text" name="first-operand"></td>
+                <td>
+                    <input type="text" name="first-operand" value="${firstOperand}">
+                    <span style="color: red">${firstOperandError}</span>
+                </td>
             </tr>
             <tr>
                 <td>Operator:</td>
@@ -29,7 +32,10 @@
             </tr>
             <tr>
                 <td>Second operand</td>
-                <td><input type="text" name="second-operand"></td>
+                <td>
+                    <input type="text" name="second-operand" value="${secondOperand}">
+                    <span style="color: red">${secondOperandError}</span>
+                </td>
             </tr>
         </table>
         <button type="submit" name="btn-calculate" value="calculate">Calculate</button>
