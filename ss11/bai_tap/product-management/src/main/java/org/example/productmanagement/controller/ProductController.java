@@ -72,6 +72,10 @@ public class ProductController extends HttpServlet {
 
     private void updateProduct(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int id = Integer.parseInt(req.getParameter("id"));
+        Product foundProduct = productService.findById(id);
+        if(foundProduct == null) {
+            resp.sendRedirect("/products");
+        }
         String name = req.getParameter("name");
         double price = Double.parseDouble(req.getParameter("price"));
         String description = req.getParameter("description");
@@ -83,6 +87,10 @@ public class ProductController extends HttpServlet {
 
     private void deleteProduct(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int id = Integer.parseInt(req.getParameter("deleteId"));
+        Product product = productService.findById(id);
+        if(product == null) {
+            resp.sendRedirect("/products");
+        }
         productService.remove(id);
         resp.sendRedirect("/products");
     }
