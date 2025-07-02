@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(name="CustomerController" , urlPatterns = "/customer")
-public class controller extends HttpServlet {
+public class CustomerController extends HttpServlet {
 private static ICustomerService customerService =new CustomerService();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
